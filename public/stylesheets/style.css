@@ -1,0 +1,397 @@
+
+
+body, p, ol, ul, td {
+    font-family: verdana, arial, helvetica, sans-serif;
+    font-size:   13px;
+    line-height: 18px;
+}
+
+p{
+    margin-bottom: 10px;
+
+}
+
+pre {
+    background-color: #eee;
+    padding: 10px;
+    font-size: 11px;
+}
+
+a { color: #000;text-decoration: none; }
+a:visited { color: #666; }
+
+
+.fieldWithErrors {
+    padding: 2px;
+    background-color: red;
+    display: table;
+}
+
+#errorExplanation {
+    width: 400px;
+    border: 2px solid red;
+    padding: 7px;
+    padding-bottom: 12px;
+    margin-bottom: 20px;
+    background-color: #f0f0f0;
+}
+
+#errorExplanation h2 {
+    text-align: left;
+    font-weight: bold;
+    padding: 5px 5px 5px 15px;
+    font-size: 12px;
+    margin: -7px;
+    background-color: #c00;
+    color: #fff;
+}
+
+#errorExplanation p {
+    color: #333;
+    margin-bottom: 0;
+    padding: 5px;
+}
+
+#errorExplanation ul li {
+    font-size: 12px;
+    list-style: square;
+}
+
+/****Custom Styles****/
+
+body
+{
+    background: url('../images/bg.jpg') repeat 0px 0px;
+    
+}
+
+h1, h5
+{
+    margin:20px 0 10px 10px;
+}
+
+#logo
+{
+    background:url('../images/logo.png') no-repeat;
+    height:120px;
+    margin-left: -30px;
+}
+
+#header{
+    margin:5px 0 0 0;
+    padding:5px;
+    height:70px;
+
+}
+
+#top_links{
+    margin:35px 0 0 120px;
+}
+
+#nav
+{
+    background:url('../images/nav-background.jpg');
+    color:#fff;
+}
+
+#nav a{
+    color:#fff;
+    text-decoration: none;
+}
+
+#nav ul{
+    list-style: none outside none;
+}
+
+#nav li{
+    display: inline;
+    float: left;
+    list-style-type: none;
+    padding:8px 26px;
+    margin:0px;
+}
+
+#nav li:hover{
+    background:#575b5c;
+}
+
+#content{
+
+
+}
+
+#crumbs{
+
+    font-size:14px;
+    vertical-align:bottom;
+
+}
+
+#crumbs a{
+ 
+    font-family: Titillium999, 'Trebuchet MS', Arial, sans-serif;
+    font-size: 14px;
+    font-weight: normal;
+    color:#fff;
+}
+
+#mid, .mid{
+
+    padding-top:20px;
+    float:left;width:100%;
+    background:#fff;
+    border: 1px solid #E6E6E6;
+}
+
+#links{
+
+    padding:15px 0 0px 0;
+}
+
+#grid{
+   
+    width: 100%;
+    background:#fff;
+}
+
+.row
+{
+    height:70px;
+    background:#eee;
+
+}
+
+#grid td{
+    padding: 10px 4px;
+}
+
+#grid td, #grid th{
+    padding: 10px 4px 0 5px;
+    text-align: left;
+}
+
+.table_header{
+    background:#0c2c52;
+    margin-top:20px;
+    color:#fff;
+    height:45px;
+}
+
+.table_header th{
+
+    padding:5px 0 0 3px;
+    text-align:left;
+}
+
+.red-button{
+    background:#b50e39;
+    margin:13px 0px 0 40px;
+    padding:3px 10px;
+    width:80px;
+    
+    color: #555;
+    float: left;
+    font-family: Titillium999, 'Trebuchet MS', Arial, sans-serif;
+    font-size: 12px;
+    font-weight: normal;
+
+    text-transform: uppercase;
+}
+
+
+.red-button a{
+    text-decoration:none;
+    color:#fff;
+
+}
+
+.submit{
+    background:#b50e39;
+    margin:15px 0px 0 0px;
+    padding:3px 10px;
+    width:80px;
+    height:30px;
+    color:#fff;
+}
+
+.text-area {
+
+    width:500px;
+    height:200px;
+}
+
+.text-large {
+    width:300px;
+    height:20px;
+    font-size:14px;   
+}
+
+.player-form label{
+    font-size:16px;
+    line-height: 26px;
+    color:#666;
+}
+
+.player-form tr{
+
+    height:50px;
+
+}
+
+.player-form td{
+    vertical-align: top;
+
+}
+
+a:hover {  text-decoration: none; }
+
+.heading {
+
+    width:100%;
+    background: url('../images/bhead.gif');
+    height:30px;
+    margin-bottom: 5px;
+    padding: 8px 0 4px;
+}
+.small {
+
+    height:15px;
+    padding: 4px 0 8px;
+
+}
+
+.heading-title {
+    font-size:22px;color:#555;padding-left:5px;
+
+}
+
+.heading-title-small{
+    font-size:16px;color:#666;padding-left:5px;
+
+}
+
+.player-list{
+
+    height: 22px;
+    margin: 15px 0px 0px;
+    padding: 3px 1px;
+    width: 140px;
+
+}
+
+#player-links{
+
+    margin:20px 0;
+}
+
+#player-links ul{
+
+    list-style: none outside none;
+}
+
+#player-links li{
+
+    list-style-type: none;
+    padding:3px 0px;
+    margin:0px;
+}
+
+select {
+    border: 1px solid #BDC7D8;
+}
+
+.playerStatTable careerAvg{
+
+    width:600px;
+}
+
+.playerStatTable tbody{
+    width:600px;
+
+}
+
+#sideColPlayers{position:relative;top:0px;width:182px;float:right;background-color:#E5E5E5}
+#mainColPlayers{width:754px;_width:755px;float:left;margin-left:1px;border-left:1px solid #DCDCDC;background-image: url(http://i.cdn.turner.com/nba/nba/media/homepage/top_bg_fade.gif);background-repeat:repeat-x;}
+#mainColPlayers:after{clear:all;}
+
+
+/*stats*/
+/*table.gSGTableStatsGrid,.playerStatTable{border-collapse:collapse;width:742px;}*/
+table.lastGames{border:1px solid #DCDCDC;}
+table.statsHeader{margin-top:10px;}
+table.gSGTableStatsGrid,table.playerStatTable{border-collapse:collapse;width:642px;border:0px;}
+table.coachAvg{width:500px;}
+td.gSGSectionTitleStatsGrid{background-image: url(http://i.cdn.turner.com/nba/nba/media/homepage/stats_header_center.gif);height:26px;padding:3px;font-weight:bold;text-transform:uppercase;}
+
+tr.gSGSectionColumnHeadingsStatsGrid{padding:2 2 2 3;}
+tr.gSGRowEvenStatsGrid td,tr.gSGRowOddStatsGrid td,.odd,.playerStatTable td{padding:2px 2px 2px 5px;border:1px solid #DCDCDC;background-color:#F4F4F4;}
+tr.gSGRowEvenStatsGrid td,.playerStatTable td{}
+tr.odd td{background-color:#ffffff;}
+tr.gSGSectionColumnHeadingsStatsGrid,tr.title, tr.title td{background-image: url(http://i.cdn.turner.com/nba/nba/media/homepage/stats_subhead.gif);height:20px;font-weight:bold;border:0px;}
+tr.title>td{border:1px solid #DCDCDC;}
+
+td.col_1 {
+    font-weight: bold;
+}
+
+
+
+#filter{
+
+    
+    text-align: center;
+}
+
+#filter legend{
+
+    padding:10px 0px;
+    display:none;
+    font-weight: bold;
+}
+
+#filter fieldset {
+
+    padding:5px 10px;
+}
+
+
+/* 3.2 =Image Grid
+---------------------------------------------------------------------- */
+
+.image-grid {
+    margin: -20px 0 0 -40px;
+    padding-left: 53px;
+
+}
+
+.image-grid:after {
+    content: "";
+    display: block;
+    height: 0;
+    overflow: hidden;
+    clear: both;
+}
+
+.image-grid li {
+
+    margin: 20px 0 0 35px;
+    float: left;
+    text-align: center;
+    font-family: "Helvetica Neue", sans-serif;
+    line-height: 17px;
+    color: #686f74;
+    height: 177px;
+    overflow: hidden;
+}
+
+.image-grid li img,
+.image-grid li strong {
+    display: block;
+}
+
+.image-grid li strong {
+    color: #666;
+}
+
+
+

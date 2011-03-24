@@ -1,0 +1,34 @@
+
+<div id="crumbs" class="table_header">
+   <div id="links" class="grid_9" > <%=link_to 'Players',  :controller => 'players', :action => 'team' %> > Manage Players</div>
+   <div class="grid_2" style="text-align:center;float: right;"><div class="red-button"><%= link_to 'Add Player', new_player_path %></div></div>
+</div>
+<div id="mid">
+<table id="grid">
+  
+  <tr >
+    <th>Name</th>
+    <th>Joined Team</th>
+    
+   
+   
+    <th></th>
+     <th></th>
+  </tr>
+
+<% @players.each do |player| %>
+  <tr>
+    <td><%=h link_to player.first_name + " " + player.last_name, player  %> </td>
+    <td><%=h time_ago_in_words(player.created_at) + " ago" %></td>  
+    <td><%= link_to 'Edit', edit_player_path(player) %></td>
+    <td><%= link_to 'Remove', player, :confirm => 'Are you sure?', :method => :delete %></td>
+  </tr>
+<% end %>
+</table>
+</div>
+
+
+
+
+<br />
+

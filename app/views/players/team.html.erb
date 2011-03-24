@@ -1,0 +1,30 @@
+<div id="crumbs" class="table_header">
+<form id="filter">
+  
+  <fieldset>
+
+    <label>Sort By: <input type="button" name="sort" class="sort-name" >Name</label>
+
+    <label><input type="button" name="sort" value="size" class="sort-jersey">Jersey</label>
+  </fieldset>
+</form>
+</div>
+<div class="mid">
+
+
+  <ul id="players" class="image-grid">
+    <% @players.each do |player| %>
+      <li data-id="id-<%= player.id %>" >
+        <%= link_to image_tag(player.player_img, :size=>'140x120'),player %>
+        <strong><%= player.fullname %></strong>
+        #<span data-type="size"><%= player.jersey_number %></span>
+      </li>
+    <% end %>
+  </ul>
+
+
+
+
+
+</div>
+

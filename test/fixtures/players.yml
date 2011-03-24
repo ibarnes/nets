@@ -1,0 +1,29 @@
+# Read about fixtures at http://ar.rubyonrails.org/classes/Fixtures.html
+
+one:
+  first_name: MyString
+  last_name: MyString
+  position: MyString
+  jersey_number: 
+  date_of_birth: 2011-03-17
+  birthplace: MyString
+  height: MyString
+  weight: MyString
+  current_agent: MyString
+  bio: MyText
+  facebook: MyString
+  twitter: MyString
+
+two:
+  first_name: MyString
+  last_name: MyString
+  position: MyString
+  jersey_number: 
+  date_of_birth: 2011-03-17
+  birthplace: MyString
+  height: MyString
+  weight: MyString
+  current_agent: MyString
+  bio: MyText
+  facebook: MyString
+  twitter: MyString

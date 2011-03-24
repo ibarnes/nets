@@ -1,0 +1,212 @@
+<div id="crumbs" class="table_header">
+   <div id="links" class="grid_9" ><%= link_to 'Players', players_path %> > <%=h @player.first_name %> <%=h @player.last_name %></div>
+  <div class="grid_2" style="text-align:center;float: right;">
+    <select class="player-list">
+      <option>Select a Player</option>
+     <% @players.each do |player| %>
+      <option value="/players/<%=player.id%>"><%=player.fullname %></option>
+      <%end%>
+    </select>
+  </div>
+</div>
+
+
+<div id="mid">
+<div class="grid_3" style="padding-left:20px;">
+
+  <%= image_tag @player.player_img %>
+
+
+  <div id="player-links">
+    <ul>
+      <li><%= link_to 'Edit', edit_player_path(@player) %></li>
+      <li><%=link_to 'Videos (3)', '#' %> </li>
+      <li><%=link_to 'Articles (10)', '#' %> </li>
+      <li><%=link_to 'Sponsors (1)','#' %> </li>
+    </ul>
+  </div>
+
+</div>
+
+<div class="grid_8" style="padding-left:20px;">
+  <div class="heading" >
+    <span class="heading-title"><%=h @player.first_name %> <%=h @player.last_name %></span>
+    <span style="font-size:16px;color:#666;"><%=h @player.position %>  <%=h @player.jersey_number %></span>
+    <div style="float:right;">
+    <%= link_to image_tag ('facebook.png' , :size=> '30x30') ,@player.facebook  %>
+    <%= link_to image_tag ('twitter.png' , :size=> '30x30') ,@player.facebook  %> </div>
+  </div>
+<p>
+  <b>Date of Birth:</b>
+  <%=h @player.date_of_birth %>
+</p>
+
+<p>
+  <b>Birthplace:</b>
+  <%=h @player.birthplace %>
+</p>
+
+<p>
+  <b>Height:</b>
+  <%=h @player.height %>
+   <b>Weight:</b>
+  <%=h @player.weight %>
+</p>
+
+
+<p>
+  <b>Current Agent:</b>
+  <%=h @player.current_agent %>
+</p>
+
+<div class="heading small">
+  <span class="heading-title-small">Draft Info</span>
+</div>
+
+<p>
+  <b>Draft Entry:</b>
+  <%=h @player.draft_entry %>
+</p>
+
+<p>
+  <b>Early Entry Info:</b>
+  <%=h @player.early_entry %>
+</p>
+
+<p>
+  <b>Pre-Draft Team:</b>
+  <%=h @player.early_entry %>
+</p>
+
+<p>
+  <b>Draft Selection:</b>
+  <%=h @player.draft_selection %>
+</p>
+
+<p>
+  <b>Draft Rights Trade:</b>
+  <%=h @player.draft_rights_trade %>
+</p>
+
+<p>
+  <b>Rights Renounced:</b>
+  <%=h @player.rights_renounced %>
+</p>
+
+<div>
+
+<p>
+<!-- Start tabs -->
+
+ <div id="tabs" style="width: 100%; font-size: 10pt;height: 300px;">
+        <ul>
+            <li><a href="#tabs-1">Bio</a></li>
+            <li><a href="#tabs-2">Stats</a></li>
+            <li><a href="#tabs-3">Scouting</a></li>
+            <li><a href="#tabs-4">Contract</a></li>
+            <li><a href="#tabs-5">Background</a></li>
+            <li><a href="#tabs-6">Medical</a></li>
+        </ul>
+        <div id="tabs-1">
+          <p><%=h @player.bio %></p>
+        </div>
+        <div id="tabs-2">
+            <p>
+   <table border="1" cellpadding="0" cellspacing="0" bordercolor="#cccccc" class="playerStatTable careerAvg">
+   <tr class="title">
+   <td class="year">Season</td>
+  
+   <td>G</td>
+   <td>GS</td>
+   <td>MPG</td>
+   <td>FG%</td>
+   <td>3p%</td>
+   <td>FT%</td>
+   <td>OFF</td>
+   <td>DEF</td>
+   <td>RPG</td>
+   <td>APG</td>
+   <td>SPG</td>
+   <td>BPG</td>
+   <td>TO</td>
+   <td>PF</td>
+   <td>PPG</td>
+   </tr>
+
+   <tr class="odd">
+      <td class="yr">10-11</td>
+     
+      <td>69</td>
+      <td>69</td>
+      <td>35.3</td>
+      <td>0.486</td>
+      <td>0.000</td>
+      <td>0.794</td>
+      <td>2.4</td>
+      <td>3.6</td>
+      <td>6.0</td>
+      <td>1.5</td>
+      <td>0.6</td>
+      <td>1.6</td>
+      <td>2.2</td>
+      <td>3.0</td>
+      <td>20.1</td>
+   </tr>
+   <tr class="career">
+      <td class="col_1">Career</td>
+    
+      <td>233</td>
+      <td>226</td>
+      <td>34.2</td>
+      <td>0.503</td>
+      <td>0.000</td>
+      <td>0.804</td>
+      <td>2.8</td>
+      <td>4.8</td>
+      <td>7.7</td>
+      <td>1.6</td>
+      <td>0.6</td>
+      <td>1.7</td>
+      <td>2.2</td>
+      <td>3.1</td>
+      <td>17.1</td>
+   </tr>
+   </table></p>
+        </div>
+        <div id="tabs-3">
+          <p>Coming Soon</p>
+        </div>
+   <div id="tabs-4">
+           <p>Coming Soon</p>
+   </div>
+   <div id="tabs-5">
+           <p>Coming Soon</p>
+   </div>
+   <div id="tabs-6">
+             <p>Coming Soon</p>
+   </div>
+    </div>
+
+<!-- End tabs -->
+</p>
+
+</div>
+</div>
+
+<script>
+  $('.player-list').change(function() {
+  window.location = $(this).val();
+});
+</script>
+
+</div>
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,61 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+  <head>
+    <meta http-equiv="content-type" content="text/html;charset=UTF-8" />
+    <title>Players: <%= controller.action_name %></title>
+
+    <%= stylesheet_link_tag 'reset' %>
+    <%= stylesheet_link_tag 'text' %>
+    <%= stylesheet_link_tag '960' %>
+    <%= stylesheet_link_tag 'style' %>
+    <%= javascript_include_tag 'jquery-1.5.1.min', 'jquery-ui-1.8.11.custom.min' %>
+    <%= stylesheet_link_tag 'jquery-ui-1.8.11.custom' %>
+    <%= javascript_include_tag 'jquery.quicksand' %>
+    
+    <%= javascript_include_tag 'jquery.easing.1.3' %>
+    <%= javascript_include_tag 'jquery-css-transform' %>
+    <%= javascript_include_tag 'jquery-animate-css-rotate-scale' %>
+ 
+    <%= javascript_include_tag 'sort' %>
+
+    <script>
+      $(function() {
+        $( "#tabs" ).tabs();
+      });
+
+     
+    </script>
+
+
+  </head>
+  <body>
+    <p style="color: green"><%= notice %></p>
+    <div id="container" class="container_12">
+
+      <div id="header" class="grid_12">
+        <div id="logo" class="grid_9"></div>
+        <div id="top_links" class="grid_2">Login | Sign Up</div>
+      </div>
+      <div class="clear"></div>
+      <div id="nav" class="grid_12">
+        <ul>
+          <li>Home</li>
+          <li><%= link_to 'Players', players_path%></li>
+        </ul>
+      </div>
+      <div class="clear"></div>
+
+      <div id="content" class="grid_12">
+
+        <%= yield %>
+      </div>
+      <div class="clear"></div>
+      <div id="footer" class="grid_12">
+
+      </div>
+
+    </div>
+  </body>
+</html>

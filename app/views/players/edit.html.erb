@@ -1,0 +1,87 @@
+<div id="crumbs" class="table_header">
+
+  <div id="links" style="padding-left: 10px;"  ><%= link_to  @player.first_name+" "+@player.last_name , @player %> > Edit Profile</div>
+
+</div>
+<div id="mid">
+  <div  class="grid_2">
+    <div id="player-links">
+      <ul>
+        <li style="background:#eee;">Basic Info</li>
+        <li>Photos</li>
+        <li>Draft Info</li>
+        <li>Social Networks</li>
+        <li>Statistics</li>
+        <li>Contract Info</li>
+      </ul>
+    </div>
+  </div>
+  <div class="grid_9 prefix_2 player-form"  style="background:#eee;border:1px solid #B3B3B3;padding:10px;">
+    <br>
+    <% form_for(@player) do |f| %>
+      <%= f.error_messages %>
+      <table >
+        <tr>
+          <td style="width:150px"> <%= f.label :first_name, 'First Name' %></td>
+          <td> <%= f.text_field :first_name, :class=>'text-large' %></td>
+        </tr>
+        <tr>
+          <td> <%= f.label :last_name, 'Last Name' %></td>
+          <td> <%= f.text_field :last_name, :class=>'text-large' %></td>
+        </tr>
+        <tr>
+          <td> <%= f.label :position, 'Position' %></td>
+          <td> <%= f.text_field :position, :class=>'text-large' %></td>
+        </tr>
+        <tr>
+          <td> <%= f.label :jersey_number, 'Number' %></td>
+          <td> <%= f.text_field :jersey_number, :class=>'text-large' %></td>
+        </tr>
+        <tr>
+          <td> <%= f.label :date_of_birth, 'Date Of Birth' %></td>
+          <td> <%= f.date_select :date_of_birth %></td>
+        </tr>
+        <tr>
+          <td><%= f.label :birthplace, 'Birth Place' %></td>
+          <td><%= f.text_field :birthplace, :class=>'text-large' %></td>
+        </tr>
+        <tr>
+          <td><%= f.label :height, 'Height' %>
+          </td>
+          <td><%= f.text_field :height, :class=>'text-large' %></td>
+        </tr>
+        <tr>
+          <td> <%= f.label :weight, 'Weight' %></td>
+          <td>  <%= f.text_field :weight, :class=>'text-large' %></td>
+
+        </tr>
+        <tr>
+          <td> <%= f.label :current_agent, 'Current Agent' %></td>
+          <td> <%= f.text_field :current_agent, :class=>'text-large' %></td>
+        </tr>
+
+        <tr>
+          <td>  <%= f.label :facebook, 'Facebook' %></td>
+          <td>  <%= f.text_field :facebook, :class=>'text-large' %></td>
+        </tr>
+        <tr>
+          <td> <%= f.label :twitter, 'Twitter' %></td>
+          <td> <%= f.text_field :twitter, :class=>'text-large' %></td>
+        </tr>
+        <tr>
+          <td> <%= f.label :bio, 'Bio' %></td>
+          <td> <%= f.text_area :bio, :class=>'text-area' %></td>
+        </tr>
+        <tr>
+          <td></td>
+          <td><%= f.submit 'Update', :class=>"submit" %></td>
+        </tr>
+      </table>
+
+      <p>
+
+      </p>
+    <% end %>
+
+  </div>
+</div>
